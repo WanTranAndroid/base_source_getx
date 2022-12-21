@@ -1,0 +1,33 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: true
+
+  errors:
+    # treat missing required parameters as a warning (not a hint)
+    missing_required_param: warning
+    # treat missing returns as a warning (not a hint)
+    missing_return: warning
+    # allow having TODOs in the code
+    todo: warning
+
+linter:
+  rules:
+    avoid_empty_else: true
+    avoid_print: true
+    valid_regexps: true
+    prefer_interpolation_to_compose_strings: false
+    avoid_classes_with_only_static_members: false
+    type_annotate_public_apis: false
+    constant_identifier_names: false
+    prefer_if_elements_to_conditional_expressions: false
+    sort_pub_dependencies: false
+    empty_catches: false
+    avoid_dynamic_calls: false
+    use_setters_to_change_properties: false
+    avoid_positional_boolean_parameters: false
+    depend_on_referenced_packages: false
+    avoid_setters_without_getters: false
+
+#https://dart-lang.github.io/linter/lints/
